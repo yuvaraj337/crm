@@ -1,0 +1,32 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+
+# Reference videos and frames (too large for GitHub)
+reference/
+*.mp4
+
+# Extracted reference images at root
+ref_top_*.png
+
+# Temp test files
+test_logo*.png
+scratch_*.py
+extract_assets.py
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+*.swp
+
+# Environment
+.env
+.env.local
+
+# Local Netlify folder
+.netlify

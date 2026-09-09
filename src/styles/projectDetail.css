@@ -1,0 +1,1727 @@
+/* ==========================================================================
+   VR REAL ESTATES — PROJECT DETAIL PAGE STYLES
+   Exact Reference Implementation matching Master Visual Reference
+   ========================================================================== */
+
+/* Main Container */
+.project-detail-main {
+  background-color: #F8FAF9;
+  min-height: 100vh;
+  padding-bottom: 40px;
+}
+
+/* --------------------------------------------------------------------------
+   1. HERO & HEADER SECTION
+   -------------------------------------------------------------------------- */
+.project-hero-header {
+  background: #FFFFFF;
+  border-bottom: 1px solid #E5E7EB;
+  padding-top: 18px;
+  padding-bottom: 0;
+}
+
+.p-breadcrumbs {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: #6B7280;
+  margin-bottom: 16px;
+}
+
+.p-breadcrumbs a {
+  color: #4B5563;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.p-breadcrumbs a:hover {
+  color: #1A3B2B;
+}
+
+.p-breadcrumbs .p-sep {
+  color: #9CA3AF;
+  font-size: 11px;
+}
+
+.p-breadcrumbs .p-current {
+  color: #1A3B2B;
+  font-weight: 600;
+}
+
+.p-hero-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 32px;
+  margin-bottom: 24px;
+}
+
+.p-hero-info {
+  flex: 1;
+  max-width: 620px;
+}
+
+.p-hero-title {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 34px;
+  font-weight: 800;
+  color: #1A3B2B;
+  line-height: 1.2;
+  margin: 0 0 8px 0;
+}
+
+.p-hero-location {
+  font-size: 15px;
+  font-weight: 600;
+  color: #374151;
+  margin: 0 0 4px 0;
+}
+
+.p-hero-desc {
+  font-size: 14px;
+  color: #6B7280;
+  margin: 0 0 16px 0;
+}
+
+.p-hero-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.p-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #ECFDF5;
+  border: 1px solid #A7F3D0;
+  color: #047857;
+  padding: 5px 14px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03);
+}
+
+.p-badge-icon {
+  font-size: 11px;
+  font-weight: 800;
+}
+
+/* Right Script Callout & Stats Strip */
+.p-hero-right-flourish {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 16px;
+}
+
+.script-callout {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.script-text {
+  font-family: 'Caveat', 'Playfair Display', cursive, serif;
+  font-size: 23px;
+  font-weight: 700;
+  color: #1A3B2B;
+  letter-spacing: 0.5px;
+}
+
+.script-underline {
+  margin-top: -2px;
+}
+
+.p-stats-strip {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  background: #F9FAFB;
+  border: 1px solid #E5E7EB;
+  border-radius: 12px;
+  padding: 10px 18px;
+}
+
+.pstat-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.pstat-item:not(:last-child) {
+  padding-right: 14px;
+  border-right: 1px solid #E5E7EB;
+}
+
+.pstat-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pstat-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.pstat-val {
+  font-size: 16px;
+  font-weight: 800;
+  color: #1A3B2B;
+  line-height: 1.1;
+}
+
+.pstat-lbl {
+  font-size: 11px;
+  color: #6B7280;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+/* --------------------------------------------------------------------------
+   2. PROJECT NAVIGATION TABS
+   -------------------------------------------------------------------------- */
+.p-tabs-nav-bar {
+  border-top: 1px solid #E5E7EB;
+  margin-top: 8px;
+  padding: 10px 0;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.p-tabs-nav-bar::-webkit-scrollbar {
+  display: none;
+}
+
+.p-tabs-list {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: max-content;
+}
+
+.p-tab-btn {
+  display: inline-block;
+  padding: 8px 18px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #4B5563;
+  background: #F3F4F6;
+  border: 1px solid #E5E7EB;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.p-tab-btn:hover {
+  background: #E5E7EB;
+  color: #1A3B2B;
+}
+
+.p-tab-btn.active {
+  background: #1A3B2B;
+  color: #FFFFFF;
+  border-color: #1A3B2B;
+  box-shadow: 0 2px 4px rgba(26, 59, 43, 0.2);
+}
+
+/* --------------------------------------------------------------------------
+   3. MASTER PLAN INTERACTIVE 3-COLUMN LAYOUT (VR PRIME MEADOWS)
+   -------------------------------------------------------------------------- */
+.master-plan-section {
+  padding: 30px 0 40px;
+  background: #FAF8F5;
+}
+
+.mp-container {
+  max-width: 1360px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.mp-section-title-wrap {
+  margin-bottom: 24px;
+}
+
+.mp-main-page-title {
+  font-family: var(--font-serif, 'Playfair Display', serif);
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #11291E;
+  margin: 0 0 6px;
+}
+
+.mp-main-page-sub {
+  font-size: 0.95rem;
+  color: #6B7280;
+  margin: 0;
+}
+
+.mp-layout-grid {
+  display: grid;
+  grid-template-columns: 240px 1fr 310px;
+  gap: 20px;
+  align-items: start;
+}
+
+/* Filter Column (Left) */
+.mp-filter-card {
+  background: #FFFFFF;
+  border: 1px solid #E5E7EB;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+}
+
+.filter-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #F3F4F6;
+}
+
+.filter-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #1A3B2B;
+  margin: 0;
+}
+
+.filter-reset-btn {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background: none;
+  border: none;
+  color: #6B7280;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 4px 6px;
+  border-radius: 4px;
+  transition: all 0.2s;
+}
+
+.filter-reset-btn:hover {
+  color: #1A3B2B;
+  background: #F3F4F6;
+}
+
+.filter-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.filter-label {
+  font-size: 12px;
+  font-weight: 600;
+  color: #374151;
+}
+
+.select-wrap {
+  position: relative;
+}
+
+.filter-select {
+  width: 100%;
+  padding: 8px 12px;
+  font-size: 13px;
+  color: #1F2937;
+  background: #FFFFFF;
+  border: 1px solid #D1D5DB;
+  border-radius: 6px;
+  outline: none;
+  appearance: auto;
+  cursor: pointer;
+  transition: border-color 0.2s;
+}
+
+.filter-select:focus {
+  border-color: #1A3B2B;
+  box-shadow: 0 0 0 2px rgba(26, 59, 43, 0.1);
+}
+
+.checkbox-options {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.custom-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: #374151;
+  font-weight: 500;
+  cursor: pointer;
+  user-select: none;
+}
+
+.custom-checkbox input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  accent-color: #0E3626;
+  border-radius: 4px;
+}
+
+.mp-apply-btn {
+  margin-top: 6px;
+  width: 100%;
+  background: #1A3B2B;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 6px;
+  padding: 10px;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.mp-apply-btn:hover {
+  background: #0F261C;
+}
+
+/* Master Plan Viewport Center Card */
+.mp-viewport-card {
+  background: #FFFFFF;
+  border: 1px solid #E5E7EB;
+  border-radius: 16px;
+  padding: 16px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+  position: relative;
+  overflow: hidden;
+}
+
+.mp-stage-header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #F3F4F6;
+  margin-bottom: 12px;
+}
+
+.mp-legend-bar {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #374151;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.legend-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.legend-dot.available {
+  background-color: #10B981;
+}
+
+.legend-dot.reserved {
+  background-color: #F59E0B;
+}
+
+.legend-dot.sold {
+  background-color: #EF4444;
+}
+
+.mp-stage-wrap {
+  position: relative;
+  width: 100%;
+  background: #F4F8F1;
+  border: 1px solid #D9E4D4;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.03);
+  padding: 8px;
+}
+
+.mp-compass-badge {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  z-index: 10;
+}
+
+.compass-n-circle {
+  background: #113B28;
+  border: 2px solid #86EFAC;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.compass-n-text {
+  font-size: 11px;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.compass-marker {
+  font-size: 7px;
+  color: #4ADE80;
+  line-height: 1;
+  margin-top: 1px;
+}
+
+.mp-zoom-controls {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.zoom-btn {
+  background: #FFFFFF;
+  border: 1px solid #D1D5DB;
+  border-radius: 6px;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #1F2937;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s;
+}
+
+.zoom-btn:hover {
+  background: #F3F4F6;
+  color: #1A3B2B;
+  border-color: #1A3B2B;
+}
+
+.mp-canvas-scroll {
+  width: 100%;
+  overflow: auto;
+  cursor: grab;
+  scrollbar-width: thin;
+}
+
+.mp-canvas-transform {
+  transition: transform 0.2s ease-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.master-plan-svg {
+  width: 100%;
+  height: auto;
+  max-height: 560px;
+  display: block;
+  filter: drop-shadow(0 8px 24px rgba(18, 48, 25, 0.1));
+}
+
+.plot-item {
+  transition: filter 0.15s ease, opacity 0.2s ease;
+}
+
+.plot-item:hover .plot-rect {
+  stroke: #0284C7;
+  stroke-width: 2.2;
+}
+
+.plot-item.plot-selected .plot-rect {
+  stroke: #0284C7 !important;
+  stroke-width: 3 !important;
+}
+
+.mp-mobile-quick-actions {
+  display: none;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.mp-mob-btn {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.mp-mob-btn.primary {
+  background: #1A3B2B;
+  color: #FFFFFF;
+  border: none;
+}
+
+.mp-mob-btn.secondary {
+  background: #F3F4F6;
+  color: #1A3B2B;
+  border: 1px solid #D1D5DB;
+}
+
+/* Plot Details Column (Right) */
+.mp-details-card {
+  background: #FFFFFF;
+  border: 1px solid #E5E7EB;
+  border-radius: 12px;
+  padding: 18px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+}
+
+.plot-details-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.pd-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.pd-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #1A3B2B;
+  margin: 0;
+}
+
+.pd-close-btn {
+  background: none;
+  border: none;
+  color: #9CA3AF;
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+}
+
+.pd-close-btn:hover {
+  color: #1F2937;
+  background: #F3F4F6;
+}
+
+.pd-status-row {
+  margin-bottom: 10px;
+}
+
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 10px;
+  border-radius: 14px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.status-badge.available {
+  background: #ECFDF5;
+  color: #059669;
+  border: 1px solid #A7F3D0;
+}
+
+.status-badge.reserved {
+  background: #FFFBEB;
+  color: #D97706;
+  border: 1px solid #FDE68A;
+}
+
+.status-badge.sold {
+  background: #FEF2F2;
+  color: #DC2626;
+  border: 1px solid #FECACA;
+}
+
+.pd-main-id {
+  margin-bottom: 12px;
+}
+
+.pd-plot-number {
+  font-size: 26px;
+  font-weight: 800;
+  color: #1A3B2B;
+  line-height: 1.1;
+}
+
+.pd-plot-sub {
+  font-size: 13px;
+  color: #6B7280;
+  margin-top: 2px;
+}
+
+.pd-price-box {
+  background: #F9FAFB;
+  border: 1px solid #E5E7EB;
+  border-radius: 8px;
+  padding: 10px 14px;
+  margin-bottom: 16px;
+}
+
+.pd-price-val {
+  font-size: 22px;
+  font-weight: 800;
+  color: #1A3B2B;
+  line-height: 1.1;
+}
+
+.pd-price-rate {
+  font-size: 12px;
+  color: #6B7280;
+  margin-top: 2px;
+}
+
+.pd-specs-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.pd-spec-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.spec-icon-wrap {
+  width: 24px;
+  height: 24px;
+  background: #F3F4F6;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.spec-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.spec-label {
+  font-size: 11px;
+  color: #6B7280;
+}
+
+.spec-value {
+  font-size: 12px;
+  font-weight: 700;
+  color: #1F2937;
+}
+
+.pd-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.pd-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.2s;
+  border: none;
+}
+
+.pd-btn.primary-choose {
+  background: #1A3B2B;
+  color: #FFFFFF;
+}
+
+.pd-btn.primary-choose:hover {
+  background: #0F261C;
+}
+
+.pd-btn.secondary-visit {
+  background: #FFFFFF;
+  color: #1A3B2B;
+  border: 1px solid #1A3B2B;
+}
+
+.pd-btn.secondary-visit:hover {
+  background: #F3F4F6;
+}
+
+.pd-btn.disabled-btn {
+  background: #E5E7EB;
+  color: #9CA3AF;
+  cursor: not-allowed;
+}
+
+.pd-protection-alert {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.pd-protection-alert.warning {
+  background: #FEF3C7;
+  color: #92400E;
+  border: 1px solid #FDE68A;
+}
+
+.pd-protection-alert.danger {
+  background: #FEE2E2;
+  color: #991B1B;
+  border: 1px solid #FECACA;
+}
+
+/* Bottom Feature Strip */
+.mp-bottom-feature-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 36px;
+  padding-top: 20px;
+  border-top: 1px solid #E5E7EB;
+}
+
+.mp-feature-pills-list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.mp-feat-pill {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #374151;
+}
+
+.mp-feat-icon {
+  font-size: 1rem;
+}
+
+.mp-bottom-tagline {
+  font-family: var(--font-serif, 'Playfair Display', serif);
+  font-size: 1.15rem;
+  color: #11291E;
+  font-weight: 600;
+}
+
+/* --------------------------------------------------------------------------
+   4. FULL SCREEN MASTER PLAN MODAL
+   -------------------------------------------------------------------------- */
+.mp-fullscreen-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #0B1E14;
+  z-index: 99999;
+  flex-direction: column;
+}
+
+.fs-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+  background: #11261B;
+  border-bottom: 1px solid #1A3B2B;
+  color: #FFFFFF;
+}
+
+.fs-exit-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #FFFFFF;
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.fs-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #D4AF37;
+}
+
+.fs-legend {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 12px;
+}
+
+.fs-body {
+  flex: 1;
+  position: relative;
+  display: flex;
+  overflow: hidden;
+}
+
+.fs-stage {
+  flex: 1;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #0F261C;
+  overflow: auto;
+}
+
+.fs-canvas-scroll {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: auto;
+}
+
+.fs-canvas-transform {
+  transition: transform 0.2s ease-out;
+}
+
+.fs-controls {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 20;
+}
+
+.fs-plot-panel {
+  position: absolute;
+  top: 20px;
+  right: 70px;
+  width: 280px;
+  max-height: calc(100% - 40px);
+  background: #FFFFFF;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  z-index: 25;
+  overflow-y: auto;
+}
+
+.fs-footer {
+  padding: 8px 20px;
+  background: #11261B;
+  color: #9CA3AF;
+  font-size: 12px;
+  text-align: center;
+  border-top: 1px solid #1A3B2B;
+}
+
+/* --------------------------------------------------------------------------
+   5. CONFIGURATIONS SECTION (FOR VILLAS, APARTMENTS, FARMLANDS)
+   -------------------------------------------------------------------------- */
+.project-config-section {
+  padding: 30px 0;
+}
+
+.config-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.config-card {
+  background: #FFFFFF;
+  border: 1px solid #E5E7EB;
+  border-radius: 12px;
+  padding: 22px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.config-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+}
+
+.config-card-header {
+  margin-bottom: 16px;
+}
+
+.config-badge {
+  display: inline-block;
+  background: #ECFDF5;
+  color: #047857;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 12px;
+  margin-bottom: 8px;
+}
+
+.config-title {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #1A3B2B;
+  margin: 0 0 4px 0;
+}
+
+.config-size {
+  font-size: 13px;
+  color: #6B7280;
+}
+
+.config-features {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.cfg-feature-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: #374151;
+}
+
+.cfg-check {
+  color: #059669;
+  font-weight: 800;
+}
+
+.config-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 16px;
+  border-top: 1px solid #F3F4F6;
+}
+
+.cfg-price {
+  display: flex;
+  flex-direction: column;
+}
+
+.cfg-price-lbl {
+  font-size: 11px;
+  color: #6B7280;
+}
+
+.cfg-price-val {
+  font-size: 18px;
+  font-weight: 800;
+  color: #1A3B2B;
+}
+
+.cfg-btn {
+  background: #1A3B2B;
+  color: #FFFFFF;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.cfg-btn:hover {
+  background: #0F261C;
+}
+
+/* --------------------------------------------------------------------------
+   6. PROJECT HIGHLIGHTS & KEY ADVANTAGES SECTIONS
+   -------------------------------------------------------------------------- */
+.detail-section {
+  padding: 30px 0;
+}
+
+.detail-section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.detail-section-title {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: #1A3B2B;
+  margin: 0;
+}
+
+.detail-section-sub {
+  font-size: 14px;
+  color: #6B7280;
+  margin: 4px 0 0 0;
+}
+
+.detail-see-all-mob {
+  display: none;
+  font-size: 13px;
+  font-weight: 600;
+  color: #1A3B2B;
+  text-decoration: none;
+}
+
+.detail-view-all-link {
+  font-size: 13px;
+  font-weight: 600;
+  color: #1A3B2B;
+  text-decoration: none;
+}
+
+.highlights-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 14px;
+}
+
+.highlight-card {
+  background: #FFFFFF;
+  border: 1px solid #E5E7EB;
+  border-radius: 10px;
+  padding: 16px 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.highlight-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+}
+
+.highlight-icon {
+  width: 44px;
+  height: 44px;
+  background: #ECFDF5;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.highlight-title {
+  font-size: 12px;
+  font-weight: 600;
+  color: #1F2937;
+  line-height: 1.3;
+}
+
+/* Key Advantages */
+.advantages-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+}
+
+.advantage-card {
+  background: #FFFFFF;
+  border: 1px solid #E5E7EB;
+  border-radius: 10px;
+  padding: 14px 12px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
+}
+
+.adv-icon {
+  width: 38px;
+  height: 38px;
+  background: #F0FDF4;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.adv-title {
+  font-size: 13px;
+  font-weight: 600;
+  color: #374151;
+  line-height: 1.3;
+}
+
+/* --------------------------------------------------------------------------
+   7. LOCATION CONNECTIVITY & GALLERY SECTION
+   -------------------------------------------------------------------------- */
+.loc-gal-grid {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 24px;
+  align-items: start;
+}
+
+.location-connectivity-card {
+  background: #FFFFFF;
+  border: 1px solid #E5E7EB;
+  border-radius: 12px;
+  padding: 18px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+}
+
+.schematic-map-wrap {
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #E2E8F0;
+  margin-bottom: 18px;
+}
+
+.schematic-svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.distance-table-wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.dist-table-heading {
+  font-size: 14px;
+  font-weight: 700;
+  color: #1A3B2B;
+  margin: 0 0 12px 0;
+}
+
+.distance-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.distance-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 7px 0;
+  border-bottom: 1px solid #F3F4F6;
+  font-size: 13px;
+}
+
+.dist-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.dist-icon {
+  font-size: 14px;
+}
+
+.dist-name {
+  color: #374151;
+  font-weight: 500;
+}
+
+.dist-right {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.dist-km {
+  font-weight: 700;
+  color: #1A3B2B;
+}
+
+.dist-time {
+  color: #6B7280;
+  font-size: 12px;
+}
+
+.dist-gmaps-btn-wrap {
+  margin-top: 4px;
+}
+
+.dist-gmaps-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  background: #1A3B2B;
+  color: #FFFFFF;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+
+.dist-gmaps-btn:hover {
+  background: #0F261C;
+}
+
+/* Gallery Card */
+.gallery-card {
+  background: #FFFFFF;
+  border: 1px solid #E5E7EB;
+  border-radius: 12px;
+  padding: 18px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+}
+
+.gallery-featured-wrap {
+  position: relative;
+  width: 100%;
+  height: 230px;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 14px;
+}
+
+.gallery-featured-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.gallery-featured-wrap:hover .gallery-featured-img {
+  transform: scale(1.03);
+}
+
+.gallery-featured-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.75));
+  color: #FFFFFF;
+  padding: 12px 14px 8px 14px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.gallery-thumbs-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.gallery-thumb-item {
+  position: relative;
+  height: 100px;
+  border-radius: 6px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.gallery-thumb-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.2s ease;
+}
+
+.gallery-thumb-item:hover img {
+  transform: scale(1.05);
+}
+
+.gallery-thumb-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(15, 38, 28, 0.75);
+  color: #FFFFFF;
+  padding: 4px 6px;
+  font-size: 11px;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* --------------------------------------------------------------------------
+   8. LUXURY CTA BANNER
+   -------------------------------------------------------------------------- */
+.project-cta-banner-section {
+  padding: 20px 0;
+}
+
+.project-cta-banner {
+  background: linear-gradient(135deg, #1A3B2B 0%, #0F261C 100%);
+  border-radius: 12px;
+  padding: 36px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  box-shadow: 0 8px 24px rgba(26, 59, 43, 0.25);
+  position: relative;
+  overflow: hidden;
+}
+
+.project-cta-banner::before {
+  content: '';
+  position: absolute;
+  right: -50px;
+  top: -50px;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background: rgba(212, 175, 55, 0.08);
+  pointer-events: none;
+}
+
+.cta-banner-content {
+  max-width: 650px;
+}
+
+.cta-banner-headline {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 28px;
+  font-weight: 800;
+  color: #FFFFFF;
+  margin: 0 0 8px 0;
+}
+
+.cta-banner-sub {
+  font-size: 14px;
+  color: #D1D5DB;
+  margin: 0;
+}
+
+.cta-banner-gold-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #EAB308;
+  color: #1A3B2B;
+  border: none;
+  padding: 14px 28px;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 800;
+  cursor: pointer;
+  white-space: nowrap;
+  box-shadow: 0 4px 12px rgba(234, 179, 8, 0.35);
+  transition: all 0.2s ease;
+}
+
+.cta-banner-gold-btn:hover {
+  background: #FACC15;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(234, 179, 8, 0.5);
+}
+
+/* --------------------------------------------------------------------------
+   9. BOTTOM 3-COLUMN VALUE STRIP
+   -------------------------------------------------------------------------- */
+.project-bottom-strip-section {
+  padding: 20px 0 10px 0;
+}
+
+.bottom-strip-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.bstrip-item {
+  background: #FFFFFF;
+  border: 1px solid #E5E7EB;
+  border-radius: 10px;
+  padding: 16px;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.bstrip-icon-wrap {
+  width: 40px;
+  height: 40px;
+  background: #ECFDF5;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.bstrip-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.bstrip-title {
+  font-size: 14px;
+  font-weight: 700;
+  color: #1A3B2B;
+  margin: 0 0 4px 0;
+}
+
+.bstrip-desc {
+  font-size: 12px;
+  color: #6B7280;
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* --------------------------------------------------------------------------
+   10. RESPONSIVE BREAKPOINTS (Mobile & Tablet)
+   -------------------------------------------------------------------------- */
+@media (max-width: 1024px) {
+  .mp-layout-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .loc-gal-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .highlights-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .advantages-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .config-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .p-hero-row {
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .p-hero-right-flourish {
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .p-stats-strip {
+    width: 100%;
+    overflow-x: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .project-hero-header {
+    padding-top: 12px;
+  }
+
+  .p-hero-title {
+    font-size: 24px;
+  }
+
+  .p-stats-strip {
+    gap: 10px;
+    padding: 8px 12px;
+  }
+
+  .pstat-item:not(:last-child) {
+    padding-right: 10px;
+  }
+
+  .pstat-val {
+    font-size: 14px;
+  }
+
+  .pstat-lbl {
+    font-size: 10px;
+  }
+
+  .script-text {
+    font-size: 18px;
+  }
+
+  /* Mobile Normal View for Master Plan */
+  .mp-filter-card {
+    display: none; /* Hide filter on mobile or make expandable */
+  }
+
+  .mp-mobile-quick-actions {
+    display: flex;
+  }
+
+  /* Mobile Drawer for Selected Plot Details */
+  .mp-details-card {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #FFFFFF;
+    border-radius: 20px 20px 0 0;
+    box-shadow: 0 -8px 30px rgba(0, 0, 0, 0.25);
+    z-index: 1000;
+    padding: 20px;
+    max-height: 80vh;
+    overflow-y: auto;
+    animation: slideUp 0.3s ease-out forwards;
+  }
+
+  .mp-details-card.mobile-open {
+    display: block;
+  }
+
+  @keyframes slideUp {
+    from {
+      transform: translateY(100%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+
+  .highlights-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .detail-see-all-mob {
+    display: inline-block;
+  }
+
+  .advantages-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-cta-banner {
+    flex-direction: column;
+    text-align: center;
+    padding: 24px 20px;
+  }
+
+  .cta-banner-action {
+    width: 100%;
+  }
+
+  .cta-banner-gold-btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .bottom-strip-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Mobile Fullscreen Panel */
+  .fs-plot-panel {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: auto;
+    width: 100%;
+    border-radius: 16px 16px 0 0;
+    max-height: 60vh;
+  }
+}
+
+@media (max-width: 430px) {
+  .highlights-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .p-hero-badges {
+    gap: 6px;
+  }
+
+  .p-badge {
+    font-size: 11px;
+    padding: 4px 10px;
+  }
+}
+
+/* ==========================================================================
+   PLOT ENQUIRY MODAL OVERLAY (Matches Villas Send Enquiry Layout)
+   ========================================================================== */
+.plot-enquiry-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(17, 41, 30, 0.75);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  z-index: 999999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  overflow-y: auto;
+  animation: plotFadeIn 0.2s ease-out forwards;
+}
+
+@keyframes plotFadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes plotScaleIn {
+  from { opacity: 0; transform: scale(0.95) translateY(8px); }
+  to { opacity: 1; transform: scale(1) translateY(0); }
+}

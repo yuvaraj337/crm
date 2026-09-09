@@ -1,0 +1,445 @@
+/* ==========================================================================
+   OPEN PLOTS LISTING PAGE STYLES (10,000% Match to Reference)
+   ========================================================================== */
+
+.open-plots-page {
+  background-color: #FAF8F5;
+  min-height: 100vh;
+  padding-bottom: 80px;
+}
+
+.open-plots-container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 24px 20px 0 20px;
+}
+
+/* Breadcrumbs & Header */
+.open-plots-top-nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 12px;
+}
+
+.open-plots-breadcrumb {
+  font-size: 0.85rem;
+  color: #6B7280;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.open-plots-breadcrumb a {
+  color: #6B7280;
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+.open-plots-breadcrumb a:hover {
+  color: #1A3B2B;
+}
+
+.open-plots-breadcrumb .sep {
+  color: #9CA3AF;
+}
+
+.open-plots-breadcrumb .current {
+  color: #1A3B2B;
+  font-weight: 700;
+}
+
+/* Page Title & Subtitle */
+.open-plots-header-section {
+  margin-bottom: 28px;
+}
+
+.open-plots-main-title {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 2.3rem;
+  font-weight: 800;
+  color: #1A3B2B;
+  margin: 0 0 6px 0;
+  letter-spacing: -0.5px;
+}
+
+.open-plots-main-subtitle {
+  font-size: 0.95rem;
+  color: #6B7280;
+  margin: 0;
+  font-weight: 500;
+}
+
+/* Two Column Layout */
+.open-plots-layout-grid {
+  display: grid;
+  grid-template-columns: 290px 1fr;
+  gap: 28px;
+  align-items: start;
+}
+
+/* ==========================================================================
+   LEFT SIDEBAR: FIND YOUR PLOT FILTER
+   ========================================================================== */
+.plots-filter-card {
+  background: #FFFFFF;
+  border: 1px solid #EAEAEA;
+  border-radius: 16px;
+  padding: 22px 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+  position: sticky;
+  top: 90px;
+}
+
+.plots-filter-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 18px;
+}
+
+.plots-filter-title {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #1A3B2B;
+  margin: 0;
+}
+
+.plots-reset-btn {
+  background: none;
+  border: none;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #6B7280;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 6px;
+  transition: color 0.15s ease;
+}
+
+.plots-reset-btn:hover {
+  color: #1A3B2B;
+}
+
+/* Search Input */
+.plots-search-wrap {
+  position: relative;
+  margin-bottom: 12px;
+}
+
+.plots-search-icon {
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #9CA3AF;
+  pointer-events: none;
+}
+
+.plots-search-input {
+  width: 100%;
+  padding: 11px 14px 11px 40px;
+  background: #FFFFFF;
+  border: 1px solid #E5E7EB;
+  border-radius: 10px;
+  font-size: 0.88rem;
+  color: #1F2937;
+  outline: none;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.plots-search-input:focus {
+  border-color: #1A3B2B;
+  box-shadow: 0 0 0 3px rgba(26, 59, 43, 0.08);
+}
+
+.plots-search-input::placeholder {
+  color: #9CA3AF;
+}
+
+/* Dropdown Filters */
+.plots-select-group {
+  margin-bottom: 12px;
+}
+
+.plots-select-wrap {
+  position: relative;
+}
+
+.plots-select-wrap select {
+  width: 100%;
+  padding: 11px 14px;
+  background: #FFFFFF;
+  border: 1px solid #E5E7EB;
+  border-radius: 10px;
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: #374151;
+  outline: none;
+  cursor: pointer;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%236B7280' stroke-width='2'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 14px center;
+  transition: border-color 0.15s ease;
+}
+
+.plots-select-wrap select:focus {
+  border-color: #1A3B2B;
+}
+
+.plots-apply-btn {
+  width: 100%;
+  margin-top: 10px;
+  padding: 12px 18px;
+  background: #1A3B2B;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 10px;
+  font-size: 0.92rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.15s ease, transform 0.1s ease;
+}
+
+.plots-apply-btn:hover {
+  background: #11291E;
+}
+
+/* ==========================================================================
+   RIGHT SIDE: PROPERTY CARDS LIST
+   ========================================================================== */
+.plots-cards-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.plot-card-horizontal {
+  background: #FFFFFF;
+  border: 1px solid #EAEAEA;
+  border-radius: 16px;
+  padding: 14px 18px 14px 14px;
+  display: grid;
+  grid-template-columns: 215px 1fr auto;
+  gap: 18px;
+  align-items: center;
+  text-decoration: none;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.03);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+  position: relative;
+  cursor: pointer;
+}
+
+.plot-card-horizontal:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+  border-color: #D1D5DB;
+}
+
+/* Card Media / Thumbnail */
+.plot-card-thumb-wrap {
+  width: 215px;
+  height: 125px;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+  background: #E5E7EB;
+  flex-shrink: 0;
+}
+
+.plot-card-thumb {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.plot-card-horizontal:hover .plot-card-thumb {
+  transform: scale(1.04);
+}
+
+/* Card Main Info */
+.plot-card-info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  min-width: 0;
+}
+
+.plot-card-name {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.22rem;
+  font-weight: 700;
+  color: #11291E;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.plot-card-loc-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.83rem;
+  color: #6B7280;
+}
+
+.plot-card-loc-icon {
+  color: #1A3B2B;
+  flex-shrink: 0;
+}
+
+.plot-card-dim-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.83rem;
+  color: #4B5563;
+  font-weight: 600;
+}
+
+.plot-card-price-row {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  margin: 2px 0;
+}
+
+.plot-card-price-main {
+  font-size: 1.22rem;
+  font-weight: 800;
+  color: #D97706;
+}
+
+.plot-card-price-rate {
+  font-size: 0.82rem;
+  color: #6B7280;
+  font-weight: 500;
+}
+
+/* Feature Tags Row */
+.plot-card-tags-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 2px;
+}
+
+.plot-tag-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #4B5563;
+}
+
+.plot-tag-icon {
+  font-size: 0.85rem;
+}
+
+/* Card Right Actions */
+.plot-card-actions-side {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+  height: 100%;
+  min-height: 110px;
+  padding: 4px 0;
+}
+
+.plot-card-top-pills {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.plot-fav-btn {
+  background: none;
+  border: none;
+  color: #6B7280;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+  border-radius: 50%;
+  transition: color 0.15s ease, transform 0.1s ease;
+}
+
+.plot-fav-btn:hover {
+  color: #DC2626;
+  transform: scale(1.1);
+}
+
+.plot-status-pill {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 14px;
+  border-radius: 20px;
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.plot-status-pill.available {
+  background: #DCFCE7;
+  color: #15803D;
+  border: 1px solid #86EFAC;
+}
+
+.plot-card-arrow-btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid #E5E7EB;
+  background: #FFFFFF;
+  color: #11291E;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  margin-top: auto;
+}
+
+.plot-card-horizontal:hover .plot-card-arrow-btn {
+  background: #1A3B2B;
+  color: #FFFFFF;
+  border-color: #1A3B2B;
+  transform: translateX(3px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 960px) {
+  .open-plots-layout-grid {
+    grid-template-columns: 1fr;
+  }
+  .plots-filter-card {
+    position: static;
+  }
+}
+
+@media (max-width: 640px) {
+  .plot-card-horizontal {
+    grid-template-columns: 1fr;
+    padding: 14px;
+  }
+  .plot-card-thumb-wrap {
+    width: 100%;
+    height: 160px;
+  }
+  .plot-card-actions-side {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    min-height: auto;
+    width: 100%;
+    padding-top: 8px;
+    border-top: 1px solid #F3F4F6;
+  }
+}
