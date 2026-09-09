@@ -1,7 +1,7 @@
-import heroFarm from '../../../reference/homepage/hero-farm.jpeg';
-import heroVilla from '../../../reference/homepage/hero-villa.jpeg';
-import heroPlots from '../../../reference/homepage/hero-apartments.jpeg';
-import heroApartments from '../../../reference/homepage/hero-plots.jpeg';
+import heroFarm from '../../assets/hero/hero-farm.jpeg';
+import heroVilla from '../../assets/hero/hero-villa.jpeg';
+import heroPlots from '../../assets/hero/hero-apartments.jpeg';
+import heroApartments from '../../assets/hero/hero-plots.jpeg';
 
 export const heroSlidesData = [
   {
